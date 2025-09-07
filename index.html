@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy - Calculator App</title>
   <style>
+    /* --- General Body --- */
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,8 +14,10 @@
       background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       background-attachment: fixed;
     }
+
+    /* --- Header --- */
     header {
-      background: rgba(0,0,0,0.7);
+      background: rgba(0,0,0,0.75);
       padding: 20px;
       text-align: center;
       border-bottom: 2px solid #00ff94;
@@ -24,12 +27,22 @@
       gap: 15px;
       flex-wrap: wrap;
     }
+    header img {
+      height: 50px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    header img:hover {
+      transform: scale(1.1);
+    }
     header h1 {
       margin: 0;
       font-size: 2rem;
       color: #00ff94;
       letter-spacing: 1px;
     }
+
+    /* --- Container --- */
     .container {
       max-width: 900px;
       margin: 40px auto;
@@ -39,6 +52,8 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.4);
       animation: fadeIn 1s ease-in;
     }
+
+    /* --- Headings and Text --- */
     h2 {
       color: #00ff94;
       border-left: 5px solid #00ff94;
@@ -48,14 +63,25 @@
     p {
       margin: 10px 0;
     }
+
+    /* --- Footer --- */
     footer {
       text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-      background: rgba(0,0,0,0.7);
+      padding: 30px 15px 15px 15px;
+      background: rgba(0,0,0,0.75);
       border-top: 2px solid #00ff94;
       color: #ccc;
+      position: relative;
     }
+    footer img {
+      height: 70px;
+      margin-top: 15px;
+      transition: transform 0.3s;
+    }
+    footer img:hover {
+      transform: scale(1.1);
+    }
+
     a {
       color: #00ff94;
       text-decoration: none;
@@ -63,6 +89,8 @@
     a:hover {
       text-decoration: underline;
     }
+
+    /* --- Animations --- */
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -70,12 +98,14 @@
   </style>
 </head>
 <body>
+  <!-- --- Header --- -->
   <header>
     <img src="https://raw.githubusercontent.com/01Ruwantha/calculator-privacy-policy/2db1f5841ee3f957ebe13168a157b597b39d837b/pic_01.jpg" 
-         alt="Developer Logo" 
-         style="height:50px; border-radius: 10px;">
+         alt="Developer Logo">
     <h1>Privacy Policy - Calculator App</h1>
   </header>
+
+  <!-- --- Main Content --- -->
   <div class="container">
     <p><strong>Effective Date:</strong> September 7, 2025</p>
 
@@ -107,8 +137,12 @@
     <p>📧 <a href="mailto:01ruwantha@gamil.com">01ruwantha@gamil.com</a></p>
   </div>
 
+  <!-- --- Footer with Company Logo --- -->
   <footer>
     &copy; 2025 P.V. Ruwantha Madhushan | Calculator App Privacy Policy
+    <br>
+    <img src="https://raw.githubusercontent.com/01Ruwantha/calculator-privacy-policy/d8cfef386ee8f35d2b8822e2389cd6ef4a238635/ma.png" 
+         alt="Company Logo">
   </footer>
 </body>
 </html>
